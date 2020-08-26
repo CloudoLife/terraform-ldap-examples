@@ -1,0 +1,25 @@
+
+# First, Denylist ignore everything
+*
+*/**
+
+# Allowlist the file or folder
+# !NotIgnoredFile
+# !NotIgnoredFolder/
+
+# Recursively allowlist its contents
+# !NotIgnoredFolder/**
+
+!*.tf
+!*.tfvars
+!docker/**
+!docker-compose/**
+
+!.dockerignore
+!.env
+!.gitignore
+
+!docker-compose.yml
+!install.sh
+!import.sh
+!README.md
